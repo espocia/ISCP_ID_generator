@@ -1,0 +1,227 @@
+body{
+    font-family: 'Baloo 2', cursive;
+    justify-content: center;
+    padding: 10px 30px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 250);
+    padding: 10px 15px;
+    font-size: larger;
+    font-weight: bolder;
+    background-image: url(./assets/International-State-College-of-the-Philippines.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position:-5px -50px;
+    background-blend-mode:hard-light;
+
+}
+.header-span{
+    color: rgb(355, 355, 0);
+}
+
+.header > h1{
+    font-family: Rubik Dirt;
+    font-size: large;
+   
+    flex: 1;
+    padding: 0px;
+    margin: auto;
+   color: white;
+  
+  
+}
+.header > img{
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.ID_form{
+    overflow: hidden;
+    display: flex;
+    margin:auto;
+    width: 300px;
+    flex-direction: column;
+    border: 0.3px solid grey;
+    border-radius: 10px;
+    
+   
+   
+}
+
+form{
+  
+    position: relative;
+    font-size: small;
+    font-weight: bold;
+    
+    background-image: url("./assets/International_State_College_of_the_Philippines.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    
+
+}
+
+
+
+form > div{
+
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+form > div > input{
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    height: 30px;
+    width: 1fr;
+    padding-left: 10px;
+}
+
+form > div > input:hover{
+    border: 0.5px solid darkblue;
+}
+form > div > input:focus{
+   outline: none;
+   background-color: rgb(217, 229, 233);
+}
+form > div > label{
+    margin-bottom: 5px ;
+}
+
+.upload{
+    margin-top: 20px;
+}
+
+.upload > input{
+    border: 0px;
+    margin-top: 5px;
+    justify-content: center;
+}
+.upload > input:hover{
+    border: 0px;
+}
+
+.generate{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 0, 250);
+    margin:15px 5px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.generate:hover{
+    box-shadow: 1px 1px 10px #888888;
+    background-color: rgb(0, 0, 150);
+}
+
+
+
+
+.content > img{
+    width: 30px;
+}
+
+.prev{
+    flex: 1;
+    padding-top: 10px;
+   
+    
+}
+
+.content-header{
+    position: absolute;
+    padding: 0px 15px;
+    font-weight: bolder;
+
+}
+
+.content{
+    background-color: lightgray;
+    width: 400px;
+    height: 230px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+   display: flex;
+   flex-direction: row;
+  
+   
+
+  
+}
+
+
+.content::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 500px;
+    display: block;
+    background-color: blue;
+    height: 45px;  
+}
+
+
+.content::after{
+    content: '';
+    display: block;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0px;
+    width: 500px;
+    height: 45px;
+  
+}
+
+.content-id > img{
+    border-radius: 30px;
+    width: 60px;
+    position: absolute;
+    left: 51px;
+    top: 125px;
+}
+
+.content-box{
+    margin:60px 30px;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+}
+.content-info{
+    font-family: 'Courier Prime', monospace;   
+    list-style: none;
+    margin-top: 65px;
+    padding: 0px;
+   
+}
+
+@media only screen and  (max-width:800px){
+    
+    .main{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+

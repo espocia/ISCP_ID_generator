@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ID generator</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Courier+Prime&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <!--Fonts-->
+</head>
+<body>
+    <div class="main">
+        <div class="ID_form">
+        
+           <div class="header">
+            <img src="./assets/International_State_College_of_the_Philippines (1).png" alt="">
+            <h1>WELCOME TO <span class="header-span">ISCP<br>ID REGISTRATION</span> </h1>
+            </div>
+           <form>
+                <div class="name">
+                    <label>Full Name</label>
+                    <input type="text" id="inName" placeholder="full name">
+                </div>
+
+                <div class="birth">
+                    <label>Date of Birth</label>
+                    <input type="text" id="inBirth" placeholder="date of birth">
+                </div>
+            
+                <div class="course">
+                    <label>Course</label>
+                    <input type="text" id="inCourse" placeholder="course enrolled">
+                </div>
+            
+                <div class="campus">
+                    <label>Campus Enrolled</label>
+                    <input type="text" id="inCampus" placeholder="campus enrolled">
+                </div>
+            
+               <div class="upload">
+                    <label class="-upload" for="file">Upload Picture</label>
+                    <input class="up-btn" type="file" id="file" accept="image/*" 
+                    onchange="loadImage(event)">
+               </div> 
+              
+           </form> 
+           <button class="generate">Generate</button>
+        </div>
+
+        <div class="prev">
+
+            <div class="content">
+                <p class="content-header">INTERNATIONAL STATE COLLEGE OF THE PHILIPPINES</p>
+                <div class="content-id">
+                        <div class="content-box"></div>
+                        <img src="./assets/International_State_College_of_the_Philippines (1).png" alt="">
+                </div>
+                 <ul class="content-info">
+                     <li id="con-name">Joshua Jonelle </li>
+                     <li id="con-birth">April 10 2000</li>
+                     <li id="con-course">BSCP</li>
+                     <li id="con-campus">Moon Campus</li>
+                     <li>SubN* <span id="num"></span></li>
+                 </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
